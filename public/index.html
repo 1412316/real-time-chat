@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/12bea5520b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chat app</title>
+  </head>
+
+  <body>
+    <div class="chat__container">
+      <div class="chat__header">
+        <div class="chat__logo">
+          <i class="fab fa-facebook-messenger"></i>
+          <h3>Message</h3>
+        </div>
+        <p id="your-name">Your name</p>
+      </div>
+
+      <div class="chat__section">
+        <div class="chat__wrapper">
+          <div class="chat__message">
+            <div class="message">
+              <div class="message-row other-message">
+                <!-- <div class="message__title">
+                  <span>Other friend.</span>
+                </div>
+                <div class="message__text">
+                  Hello!
+                </div>
+                <div class="message__time">
+                  29/10 8:19 PM
+                </div> -->
+              </div>
+
+              <div class="message-row your-message">
+                <!-- <div class="message__title">
+                  <span>Me</span>
+                </div>
+                <div class="message__text">
+                  Hi!
+                </div>
+                <div class="message__time">
+                  29/10 8:22 PM
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <form class="form__message">
+            <input 
+              type="text" 
+              name="msg" 
+              id="msg" 
+              placeholder="Type your message here..."
+              autocomplete="off"
+            >
+            <button id="btn-send">
+              <i class="fas fa-reply">Send</i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>  
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</html>
