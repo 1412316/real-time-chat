@@ -41,7 +41,7 @@ const display = (msg, type) => {
   const msgDiv = document.createElement('div');
   let className = type;
   msgDiv.classList.add(className, 'message-row');
-  let times = new Date().toLocaleDateString();
+  let times = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
   let innerText = `
     <div class="message__title">
